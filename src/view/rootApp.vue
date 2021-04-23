@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <div>此框内为app.vue中的内容，不会因为点击下面的router-link而消失</div>
+    <div id="rootApp">
+    <H3>此框内为rootApp.vue中的内容，点击下面的router-link会消失</H3>
     <router-link v-bind:to="'/hello'">say Hello</router-link>
     <router-link v-bind:to="'/world'">say World</router-link>
     <router-view/>
@@ -10,8 +10,6 @@
 <script>
 
 export default {
-  name: 'App',
-  components: {
-  }
+  name: 'rootApp'
 }
 </script>
