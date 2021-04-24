@@ -1,17 +1,5 @@
-import Vue from 'vue'
-import App from './App'
-import router from './router'
+import { createApp } from 'vue'
+import App from './App.vue'
+import './index.css'
 
-Vue.config.productionTip = false
-
-// 路由跳转
-Vue.prototype.$goRoute = function (index) {
-  this.$router.push(index)
-}
-
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  render: h => h(App)
-})
+createApp(App).mount('#app')

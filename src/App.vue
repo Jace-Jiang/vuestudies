@@ -1,67 +1,15 @@
 <template>
-  <div id="app">
-    <ul>
-      <li v-for="item in links" :key="item.id"><a @click="$goRoute(item.route)">{{item.text}}</a></li>
-    </ul>
-    <router-view></router-view>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Vue 3.0 + Vite" />
 </template>
 
 <script>
-  export default {
-    name: 'app',
-    data () {
-      return {
-        links: [
-          {
-            id: 1,
-            text: '首页',
-            route: '/home'
-          },
-          {
-            id: 2,
-            text: '页面1',
-            route: '/page01'
-          },
-          {
-            id: 3,
-            text: '页面2',
-            route: '/page02'
-          }
-        ]
-      }
-    }
-  }
-</script>
+import HelloWorld from './components/HelloWorld.vue'
 
-<style>
-  #app {
-    width: 100%;
-    height: calc(100vh);
-    background:url("./assets/horse.jpg") no-repeat fixed top;
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
   }
-  .text-center {
-    text-align: center;
-  }
-  .spacing {
-    margin-top: 30px;
-  }
-  .red {
-    color: darkred;
-  }
-  ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  ul li a{
-    display: inherit;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-  }
-  ul li a:hover{
-    cursor: pointer;
-    color: #fff;
-    background-color: #138bec;
-    border: 1px solid #138bec;
-  }
-</style>
+}
+</script>
