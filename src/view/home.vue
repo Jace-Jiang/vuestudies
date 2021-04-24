@@ -34,26 +34,26 @@ export default {
             baseList:[ 
                 { id:1, text:"介绍", path:"introduce" },
                 { id:2, text:"应用 & 组件实例", path:"application" },
-                { id:3, text:"模板语法", path:"introduce" },
-                { id:4, text:"Data Property 和方法", path:"introduce" },
-                { id:5, text:"计算属性和侦听器", path:"introduce" },
-                { id:6, text:"Class 与 Style 绑定", path:"introduce" },
-                { id:7, text:"条件渲染", path:"introduce" },
-                { id:8, text:"列表渲染", path:"introduce" },
-                { id:9, text:"事件处理", path:"introduce" },
-                { id:10, text:"表单输入绑定", path:"introduce" },
-                { id:11, text:"组件基础", path:"introduce" }
+                { id:3, text:"模板语法", path:"build" },
+                { id:4, text:"Data Property 和方法", path:"build" },
+                { id:5, text:"计算属性和侦听器", path:"build" },
+                { id:6, text:"Class 与 Style 绑定", path:"build" },
+                { id:7, text:"条件渲染", path:"build" },
+                { id:8, text:"列表渲染", path:"build" },
+                { id:9, text:"事件处理", path:"build" },
+                { id:10, text:"表单输入绑定", path:"build" },
+                { id:11, text:"组件基础", path:"build" }
             ],
             moduleList:[ 
-                { id:1, text:"组件注册", path:"introduce" },
-                { id:2, text:"Props", path:"application" },
-                { id:3, text:"非 Prop 的 Attribute", path:"introduce" },
-                { id:4, text:"自定义事件", path:"introduce" },
-                { id:5, text:"插槽", path:"introduce" },
-                { id:6, text:"提供 / 注入", path:"introduce" },
-                { id:7, text:"动态组件 & 异步组件", path:"introduce" },
-                { id:8, text:"模板引用", path:"introduce" },
-                { id:9, text:"处理边界情况", path:"introduce" }
+                { id:1, text:"组件注册", path:"build" },
+                { id:2, text:"Props", path:"build" },
+                { id:3, text:"非 Prop 的 Attribute", path:"build" },
+                { id:4, text:"自定义事件", path:"build" },
+                { id:5, text:"插槽", path:"build" },
+                { id:6, text:"提供 / 注入", path:"build" },
+                { id:7, text:"动态组件 & 异步组件", path:"build" },
+                { id:8, text:"模板引用", path:"build" },
+                { id:9, text:"处理边界情况", path:"build" }
             ]
         }
     },

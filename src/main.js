@@ -1,26 +1,28 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import {createRouter,createWebHashHistory} from "vue-router"
-import home from "./view/home.vue"
-import introduce from "./view/01base/introduce.vue"
-import application from "./view/01base/application.vue"
  
 const VueRouter = createRouter({
     history:createWebHashHistory(),
     routes:[
       {
         path: '/',
-        component: home
+        component: () => import('./view/home.vue')
       },
       {
           name: "introduce",
           path: "/introduce",
-          component: introduce
+          component: () => import('./view/01base/01introduce.vue')
       },
       {
           name: "application",
           path: "/application",
-          component: application
+          component: () => import('./view/01base/02application.vue')
+      },
+      {
+          name: "build",
+          path: "/build",
+          component: () => import('./view/build.vue')
       }
     ]
   })

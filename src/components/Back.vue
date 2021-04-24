@@ -21,3 +21,11 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+  div {
+    button {
+      cursor: pointer;
+    }
+  }
+</style>
