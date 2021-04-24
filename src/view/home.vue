@@ -1,8 +1,26 @@
 <template>
-    <div>{{title}}</div>
-    <ul v-for="item in list" :key="item.id">
-        <li @click="linkClick(item.path)">{{item.text}}</li>
-    </ul>
+    <table>
+        <tr>
+            <td>
+                <div class="title">
+                    <p>{{title}}</p>
+                    <img src="../assets/horse.jpg">
+                </div>
+            </td>
+            <td>
+                <p class="demo">基础</p>
+                <ul v-for="item in baseList" :key="item.id">
+                    <li @click="linkClick(item.path)">{{item.text}}</li>
+                </ul>
+            </td>
+            <td>
+                <p class="demo">深入组件</p>
+                <ul v-for="item in moduleList" :key="item.id">
+                    <li @click="linkClick(item.path)">{{item.text}}</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </template>
 
 <script>
@@ -13,47 +31,29 @@ export default {
     data(){
         return {
             title:"vue3 studies",
-            list:[
-                {
-                    id:1,
-                    text:"基础",
-                    path:"introduce"
-                },
-                {
-                    id:2,
-                    text:"深入组件",
-                    path:"application"
-                },
-                {
-                    id:3,
-                    text:"过渡&动画",
-                    path:"introduce"
-                },
-                {
-                    id:4,
-                    text:"可复用&组合",
-                    path:"introduce"
-                },
-                {
-                    id:5,
-                    text:"高阶指南",
-                    path:"introduce"
-                },
-                {
-                    id:6,
-                    text:"工具",
-                    path:"introduce"
-                },
-                {
-                    id:7,
-                    text:"规模化",
-                    path:"introduce"
-                },
-                {
-                    id:8,
-                    text:"无障碍",
-                    path:"introduce"
-                }
+            baseList:[ 
+                { id:1, text:"介绍", path:"introduce" },
+                { id:2, text:"应用 & 组件实例", path:"application" },
+                { id:3, text:"模板语法", path:"introduce" },
+                { id:4, text:"Data Property 和方法", path:"introduce" },
+                { id:5, text:"计算属性和侦听器", path:"introduce" },
+                { id:6, text:"Class 与 Style 绑定", path:"introduce" },
+                { id:7, text:"条件渲染", path:"introduce" },
+                { id:8, text:"列表渲染", path:"introduce" },
+                { id:9, text:"事件处理", path:"introduce" },
+                { id:10, text:"表单输入绑定", path:"introduce" },
+                { id:11, text:"组件基础", path:"introduce" }
+            ],
+            moduleList:[ 
+                { id:1, text:"组件注册", path:"introduce" },
+                { id:2, text:"Props", path:"application" },
+                { id:3, text:"非 Prop 的 Attribute", path:"introduce" },
+                { id:4, text:"自定义事件", path:"introduce" },
+                { id:5, text:"插槽", path:"introduce" },
+                { id:6, text:"提供 / 注入", path:"introduce" },
+                { id:7, text:"动态组件 & 异步组件", path:"introduce" },
+                { id:8, text:"模板引用", path:"introduce" },
+                { id:9, text:"处理边界情况", path:"introduce" }
             ]
         }
     },
@@ -69,8 +69,22 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    .title {
+        text-align: center;
+        p {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(145, 16, 16);
+        }
+    }
+    .demo {
+        font-size: 23px;
+        font-weight: bold;
+        padding-left: 23px;
+        color: rgb(145, 16, 16);
+    }
     ul {
-        width: 200px;
+        width: 170px;
         li {
             cursor: pointer;
             font-weight: bold;
