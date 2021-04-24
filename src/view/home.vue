@@ -1,7 +1,7 @@
 <template>
     <div>{{title}}</div>
     <ul v-for="item in list" :key="item.id">
-        <li>{{item.text}}</li>
+        <li @click="linkClick(item.path)">{{item.text}}</li>
     </ul>
 </template>
 
@@ -16,35 +16,43 @@ export default {
             list:[
                 {
                     id:1,
-                    text:"基础"
+                    text:"基础",
+                    path:"introduce"
                 },
                 {
                     id:2,
-                    text:"深入组件"
+                    text:"深入组件",
+                    path:"application"
                 },
                 {
                     id:3,
-                    text:"过渡&动画"
+                    text:"过渡&动画",
+                    path:"introduce"
                 },
                 {
                     id:4,
-                    text:"可复用&组合"
+                    text:"可复用&组合",
+                    path:"introduce"
                 },
                 {
                     id:5,
-                    text:"高阶指南"
+                    text:"高阶指南",
+                    path:"introduce"
                 },
                 {
                     id:6,
-                    text:"工具"
+                    text:"工具",
+                    path:"introduce"
                 },
                 {
                     id:7,
-                    text:"规模化"
+                    text:"规模化",
+                    path:"introduce"
                 },
                 {
                     id:8,
-                    text:"无障碍"
+                    text:"无障碍",
+                    path:"introduce"
                 }
             ]
         }
@@ -53,7 +61,20 @@ export default {
     components:{},
 
     methods:{
-
+        linkClick(route){
+            this.$router.push(route)
+        }
     }
 }
 </script>
+
+<style lang="less" scoped>
+    ul {
+        width: 200px;
+        li {
+            cursor: pointer;
+            font-weight: bold;
+            color:rgb(45, 141, 185);
+        }
+    }
+</style>
