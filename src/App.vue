@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ul>
-      <li v-for="item in links" :key="item.text"><a @click="$goRoute(item.route)">{{item.text}}</a></li>
+      <li v-for="item in links" :key="item.id"><a @click="$goRoute(item.route)">{{item.text}}</a></li>
     </ul>
     <router-view></router-view>
   </div>
@@ -14,14 +14,17 @@
       return {
         links: [
           {
+            id: 1,
             text: '首页',
             route: '/home'
           },
           {
+            id: 2,
             text: '页面1',
             route: '/page01'
           },
           {
+            id: 3,
             text: '页面2',
             route: '/page02'
           }
