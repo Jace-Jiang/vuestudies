@@ -13,7 +13,7 @@
                 </li>
             </ul>
         </div>
-        <img src="../assets/horse.jpg">
+        <div class="pic">重学前端(Vue3)</div>
     </div>
 </template>
 
@@ -143,10 +143,6 @@ export default {
 
 <style lang="less" scoped>
     .content {
-        img {
-            margin-left: 5px;
-            float:left;
-        }
         .menu {
             float: left;
             margin-left: 5px;
@@ -180,6 +176,20 @@ export default {
                     background-color: #ff9800;
                 }
             }
+        }
+        .pic {
+            float:left;
+            margin-left: 5px;
+            text-align: center;
+            font-size: 27px;
+            font-weight: bold;
+            font-family: Cursive;
+            color: #ffffff;
+            width: 880px;
+            height: 484px;
+            border: 1px solid #51add8;
+            background: url("../assets/horse.jpg") 0 0 no-repeat;
+            background-size: 100% 100%;
         }
     }
 

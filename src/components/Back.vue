@@ -24,6 +24,7 @@ export default {
 
 <style lang="less" scoped>
   div {
+    text-align: center;
     button {
       cursor: pointer;
     }
