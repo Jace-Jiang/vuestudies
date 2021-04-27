@@ -71,7 +71,7 @@ export default {
                     name: '可复用&组合',
                     list: [
                         { id:1, text:"混入", path:"build" },
-                        { id:2, text:"混入", path:"build" },
+                        { id:2, text:"自定义指令", path:"build" },
                         { id:3, text:"Teleport", path:"build" },
                         { id:4, text:"渲染函数", path:"build" },
                         { id:4, text:"插件", path:"build" }
