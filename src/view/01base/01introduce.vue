@@ -19,7 +19,7 @@
     </div>
     <div id="two-way-binding" class="demo">
         <p>{{ changeMsg }}</p>
-        <input @change="changeMsgFnc()" v-model="changeMsg" />
+        <input v-model="changeMsg" />
     </div>
 
     <!-- 条件与循环 -->
@@ -97,10 +97,6 @@ export default {
             .split('')
             .reverse()
             .join('')
-        },
-
-        changeMsgFnc(e){
-            this.changeMsg = e
         },
 
         //条件与循环
