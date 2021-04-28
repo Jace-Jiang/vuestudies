@@ -146,7 +146,7 @@ export default {
         .menu {
             float: left;
             margin-left: 5px;
-            width: 390px;
+            width: 370px;
             background-color: #51add8;
             color: #ffffff;
             >ul {
