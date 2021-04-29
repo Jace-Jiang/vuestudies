@@ -20,6 +20,11 @@ const VueRouter = createRouter({
           component: () => import('./view/01base/02application.vue')
       },
       {
+          name: "grammar",
+          path: "/grammar",
+          component: () => import('./view/01base/03grammar.vue')
+      },
+      {
           name: "build",
           path: "/build",
           component: () => import('./view/build.vue')
