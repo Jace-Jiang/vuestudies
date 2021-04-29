@@ -31,7 +31,7 @@ export default {
                         { id:1, text:"介绍", path:"introduce" },
                         { id:2, text:"应用 & 组件实例", path:"application" },
                         { id:3, text:"模板语法", path:"grammar" },
-                        { id:4, text:"Data Property 和方法", path:"build" },
+                        { id:4, text:"Data Property 和方法", path:"property" },
                         { id:5, text:"计算属性和侦听器", path:"build" },
                         { id:6, text:"Class 与 Style 绑定", path:"build" },
                         { id:7, text:"条件渲染", path:"build" },
