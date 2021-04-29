@@ -1,18 +1,16 @@
 <template>
-    <div>
-        <back-page></back-page>
-        <div class="demo">
-            <ol>
-                <li v-for="item in list" :key="item.id">
-                    <a :href="item.url" target="_blank">{{item.text}}</a>
-                </li>
-            </ol>
-        </div>
-        <div class="demo">
-
-        </div>
-        <img src="../../assets/lifecycle.png">
+    <back-page></back-page>
+    <div class="demo">
+        <ol>
+            <li v-for="item in list" :key="item.id">
+                <a :href="item.url" target="_blank">{{item.text}}</a>
+            </li>
+        </ol>
     </div>
+    <div class="demo">
+
+    </div>
+    <img src="../../assets/lifecycle.png">
 </template>
 
 <script>
@@ -53,14 +51,6 @@ export default {
 
 <style lang="less" scoped>
 .demo {
-  font-family: sans-serif;
-  border: 1px solid #eee;
-  border-radius: 2px;
-  padding: 20px 30px;
-  margin-top: 1em;
-  margin-bottom: 40px;
-  user-select: none;
-  overflow-x: auto;
   a {
       color:rgb(155, 30, 30);
       text-decoration:none;

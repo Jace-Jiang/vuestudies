@@ -7,7 +7,7 @@
         信息输入：<input style="width:60%;" v-model="mustacheMsg">
         <div v-once>OnceChange：{{onceMsg}}</div>
     </div>
-    
+
     <!-- 原始 HTML -->
     <div id="example1" class="demo">
         <p>Using mustaches: {{ rawHtml }}</p>
@@ -105,14 +105,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.demo {
-  font-family: sans-serif;
-  border: 1px solid #eee;
-  border-radius: 2px;
-  padding: 20px 30px;
-  margin-top: 1em;
-  margin-bottom: 40px;
-  user-select: none;
-  overflow-x: auto;
-}
+
 </style>
