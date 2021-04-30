@@ -36,7 +36,7 @@ export default {
                         { id:6, text:"06-Class 与 Style 绑定", path:"classstyle" },
                         { id:7, text:"07-条件渲染", path:"condition" },
                         { id:8, text:"08-列表渲染", path:"render" },
-                        { id:9, text:"09-事件处理", path:"build" },
+                        { id:9, text:"09-事件处理", path:"event" },
                         { id:10, text:"10-表单输入绑定", path:"build" },
                         { id:11, text:"11-组件基础", path:"build" }
                     ],
@@ -74,7 +74,7 @@ export default {
                         { id:2, text:"自定义指令", path:"build" },
                         { id:3, text:"Teleport", path:"build" },
                         { id:4, text:"渲染函数", path:"build" },
-                        { id:4, text:"插件", path:"build" }
+                        { id:5, text:"插件", path:"build" }
                     ],
                     show: false
                 }, {
@@ -103,7 +103,7 @@ export default {
                     list: [
                         { id:1, text:"路由", path:"build" },
                         { id:2, text:"状态管理", path:"build" },
-                        { id:4, text:"服务端渲染", path:"build" }
+                        { id:3, text:"服务端渲染", path:"build" }
                     ],
                     show: false
                 }, {
@@ -112,7 +112,7 @@ export default {
                     list: [
                         { id:1, text:"基础", path:"build" },
                         { id:2, text:"语义学", path:"build" },
-                        { id:4, text:"标准", path:"build" },
+                        { id:3, text:"标准", path:"build" },
                         { id:4, text:"资源", path:"build" }
                     ],
                     show: false
