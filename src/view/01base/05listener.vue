@@ -99,19 +99,19 @@ export default {
             return 'fullname1:' + this.firstName + ' ' + this.lastName
         },
 
-        //计算属性的 Setter 却在 计算属性 vs 侦听器 使用上
-        // fullName: {
-        //     // getter
-        //     get() {
-        //         return 'fullname2:' + this.firstName + ' ' + this.lastName
-        //     },
-        //     // setter
-        //     set(newValue) {
-        //         const names = newValue.split(' ')
-        //         this.firstName = names[0]
-        //         this.lastName = names[names.length - 1]
-        //     }
-        // },
+        //计算属性的 Setter 却在 计算属性 vs 侦听器 使用上 （注释后，fullname1却起作用，意思是“:”优先于“()”）
+        fullName: {
+            // getter
+            get() {
+                return 'fullname2:' + this.firstName + ' ' + this.lastName
+            },
+            // setter
+            set(newValue) {
+                const names = newValue.split(' ')
+                this.firstName = names[0]
+                this.lastName = names[names.length - 1]
+            }
+        },
 
     },
 
