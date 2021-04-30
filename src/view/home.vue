@@ -35,7 +35,7 @@ export default {
                         { id:5, text:"05-计算属性和侦听器", path:"listener" },
                         { id:6, text:"06-Class 与 Style 绑定", path:"classstyle" },
                         { id:7, text:"07-条件渲染", path:"condition" },
-                        { id:8, text:"08-列表渲染", path:"build" },
+                        { id:8, text:"08-列表渲染", path:"render" },
                         { id:9, text:"09-事件处理", path:"build" },
                         { id:10, text:"10-表单输入绑定", path:"build" },
                         { id:11, text:"11-组件基础", path:"build" }

@@ -1,8 +1,6 @@
 <template>
     <div>
-        <ol>
-            <li>{{ todo.text }}</li>
-        </ol>
+        <p>{{todo}}<button @click="$emit('remove')">Remove</button></p>
     </div>
 </template>
 
