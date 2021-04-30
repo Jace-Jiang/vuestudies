@@ -40,6 +40,11 @@ const VueRouter = createRouter({
           component: () => import('./view/01base/06classstyle.vue')
       },
       {
+          name: "condition",
+          path: "/condition",
+          component: () => import('./view/01base/07condition.vue')
+      },
+      {
           name: "build",
           path: "/build",
           component: () => import('./view/build.vue')
