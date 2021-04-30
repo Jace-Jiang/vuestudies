@@ -33,7 +33,7 @@ export default {
                         { id:3, text:"03-模板语法", path:"grammar" },
                         { id:4, text:"04-Data Property 和方法", path:"property" },
                         { id:5, text:"05-计算属性和侦听器", path:"listener" },
-                        { id:6, text:"06-Class 与 Style 绑定", path:"build" },
+                        { id:6, text:"06-Class 与 Style 绑定", path:"classstyle" },
                         { id:7, text:"07-条件渲染", path:"build" },
                         { id:8, text:"08-列表渲染", path:"build" },
                         { id:9, text:"09-事件处理", path:"build" },
