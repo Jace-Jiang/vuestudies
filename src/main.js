@@ -30,6 +30,11 @@ const VueRouter = createRouter({
           component: () => import('./view/01base/04property.vue')
       },
       {
+          name: "listener",
+          path: "/listener",
+          component: () => import('./view/01base/05listener.vue')
+      },
+      {
           name: "build",
           path: "/build",
           component: () => import('./view/build.vue')
