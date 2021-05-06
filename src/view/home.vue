@@ -38,7 +38,7 @@ export default {
                         { id:8, text:"08-列表渲染", path:"render" },
                         { id:9, text:"09-事件处理", path:"event" },
                         { id:10, text:"10-表单输入绑定", path:"form" },
-                        { id:11, text:"11-组件基础", path:"build" }
+                        { id:11, text:"11-组件基础", path:"module" }
                     ],
                     show: false
                 }, {
