@@ -55,6 +55,11 @@ const VueRouter = createRouter({
           component: () => import('./view/01base/09event.vue')
       },
       {
+          name: "form",
+          path: "/form",
+          component: () => import('./view/01base/10form.vue')
+      },
+      {
           name: "build",
           path: "/build",
           component: () => import('./view/build.vue')
