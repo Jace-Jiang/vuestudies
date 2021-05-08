@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import {createRouter,createWebHashHistory} from "vue-router"
+
+// import Vue from "vue";
+// import backtop from "./components/backtop.vue";
+// Vue.use(backtop);
  
 const VueRouter = createRouter({
     history:createWebHashHistory(),
@@ -63,6 +67,11 @@ const VueRouter = createRouter({
           name: "module",
           path: "/module",
           component: () => import('./view/01base/11module.vue')
+      },
+      {
+          name: "register",
+          path: "/register",
+          component: () => import('./view/02module/01register.vue')
       },
       {
           name: "build",

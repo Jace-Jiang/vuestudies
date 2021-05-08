@@ -45,15 +45,15 @@ export default {
                     id:2,
                     name: '深入组件',
                     list: [
-                        { id:1, text:"组件注册", path:"build" },
-                        { id:2, text:"Props", path:"build" },
-                        { id:3, text:"非 Prop 的 Attribute", path:"build" },
-                        { id:4, text:"自定义事件", path:"build" },
-                        { id:5, text:"插槽", path:"build" },
-                        { id:6, text:"提供 / 注入", path:"build" },
-                        { id:7, text:"动态组件 & 异步组件", path:"build" },
-                        { id:8, text:"模板引用", path:"build" },
-                        { id:9, text:"处理边界情况", path:"build" }
+                        { id:1, text:"01组件注册", path:"register" },
+                        { id:2, text:"02Props", path:"build" },
+                        { id:3, text:"03非 Prop 的 Attribute", path:"build" },
+                        { id:4, text:"04自定义事件", path:"build" },
+                        { id:5, text:"05插槽", path:"build" },
+                        { id:6, text:"06提供 / 注入", path:"build" },
+                        { id:7, text:"07动态组件 & 异步组件", path:"build" },
+                        { id:8, text:"08模板引用", path:"build" },
+                        { id:9, text:"09处理边界情况", path:"build" }
                     ],
                     show: false
                 }, {
