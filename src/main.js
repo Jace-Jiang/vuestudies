@@ -74,6 +74,11 @@ const VueRouter = createRouter({
           component: () => import('./view/02module/01register.vue')
       },
       {
+          name: "props",
+          path: "/props",
+          component: () => import('./view/02module/02props.vue')
+      },
+      {
           name: "build",
           path: "/build",
           component: () => import('./view/build.vue')

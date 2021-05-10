@@ -46,7 +46,7 @@ export default {
                     name: '深入组件',
                     list: [
                         { id:1, text:"01组件注册", path:"register" },
-                        { id:2, text:"02Props", path:"build" },
+                        { id:2, text:"02Props", path:"props" },
                         { id:3, text:"03非 Prop 的 Attribute", path:"build" },
                         { id:4, text:"04自定义事件", path:"build" },
                         { id:5, text:"05插槽", path:"build" },
