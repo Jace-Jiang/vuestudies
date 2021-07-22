@@ -1,31 +1,31 @@
 <template>
-    <!-- <input
+  <!-- <input
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
     > -->
 
-    <input v-model="value">
+  <input v-model="value" />
 </template>
 
 <script>
 export default {
-    name:'CostomInput',
+  name: 'CostomInput',
 
-    props: ['modelValue'],
+  props: ['modelValue'],
 
-    data() {
-        return {}
-    },
+  data () {
+    return {}
+  },
 
-    computed: {
-        value: {
-            get() {
-                return this.modelValue
-            },
-            set(value) { 
-                this.$emit('update:modelValue', value)
-            }
-        }
+  computed: {
+    value: {
+      get () {
+        return this.modelValue
+      },
+      set (value) {
+        this.$emit('update:modelValue', value)
+      }
     }
+  }
 }
 </script>

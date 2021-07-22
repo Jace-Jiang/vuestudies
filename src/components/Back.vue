@@ -10,12 +10,12 @@ export default {
   props: {
     msg: String
   },
-  data() {
+  data () {
     return {
     }
   },
-  methods:{
-    backPage(){
+  methods: {
+    backPage () {
       this.$router.push("/")
     }
   }
@@ -23,10 +23,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  div {
-    text-align: center;
-    button {
-      cursor: pointer;
-    }
+div {
+  text-align: center;
+  button {
+    cursor: pointer;
   }
+}
 </style>

@@ -1,31 +1,31 @@
 <template>
-    <back-page></back-page>
+  <back-page></back-page>
 
-    <!-- 组件名 -->
-    <div class="demo"></div>
+  <!-- 组件名 -->
+  <div class="demo"></div>
 
-    <!-- 组件名大小写 -->
-    <div class="demo"></div>
+  <!-- 组件名大小写 -->
+  <div class="demo"></div>
 
-    <!-- 全局注册 -->
-    <div class="demo">
-        <back-top></back-top>
-    </div>
+  <!-- 全局注册 -->
+  <div class="demo">
+    <back-top></back-top>
+  </div>
 </template>
 
 <script>
 import backPage from '../../components/Back.vue'
 export default {
-    name:'register',
+  name: 'register',
 
-    data() {
-        return {}
-    },
+  data () {
+    return {}
+  },
 
-    components: {
-        backPage
-    },
+  components: {
+    backPage
+  },
 
-    methods: {}
+  methods: {}
 }
 </script>
