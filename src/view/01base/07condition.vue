@@ -36,7 +36,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: 'condition',
 
-  data () {
+  data() {
     return {
       awesome: false,
       ok: true,

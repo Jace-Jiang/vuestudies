@@ -33,7 +33,7 @@
 export default {
   name: "home",
 
-  data () {
+  data() {
     return {
       headerData: [{
         id: 1,

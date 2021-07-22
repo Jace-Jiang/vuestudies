@@ -36,7 +36,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: 'classstyle',
 
-  data () {
+  data() {
     return {
       isActive: true,
       hasError: false,
@@ -57,7 +57,7 @@ export default {
   },
 
   computed: {
-    classComputedObject () {
+    classComputedObject() {
       return {
         active: this.isActive && !this.error,
         'text-danger': this.error && this.error.type === 'fatal'

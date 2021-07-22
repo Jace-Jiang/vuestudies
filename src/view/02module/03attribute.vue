@@ -12,7 +12,7 @@ import datePicker from '../../components/DatePicker.vue'
 export default {
   name: 'attribute',
 
-  data () {
+  data() {
     return {}
   },
 
@@ -22,7 +22,7 @@ export default {
   },
 
   methods: {
-    showChange (event) {
+    showChange(event) {
       console.log(event.target.value) // 将记录所选选项的值
     }
   }

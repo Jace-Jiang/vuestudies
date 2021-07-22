@@ -47,7 +47,7 @@ import axios from 'axios'
 export default {
   name: "listener",
 
-  data () {
+  data() {
     return {
       author: {
         name: "Jace Jiang",
@@ -72,39 +72,39 @@ export default {
 
   watch: {
     // whenever question changes, this function will run
-    question (newQuestion, oldQuestion) {
+    question(newQuestion, oldQuestion) {
       if (newQuestion.indexOf('?') > -1 || newQuestion.indexOf('？') > -1) {
         this.getAnswer()
       }
     },
 
-    firstName (val) {
+    firstName(val) {
       this.fullName = val + ' ' + this.lastName
     },
-    lastName (val) {
+    lastName(val) {
       this.fullName = this.firstName + ' ' + val
     }
   },
 
   computed: {
     // 计算属性的 getter
-    publishedBooksMessage () {
+    publishedBooksMessage() {
       // `this` points to the vm instance
       return this.author.books.length > 0 ? '有书' : '没书'
     },
 
-    fullName () {
+    fullName() {
       return 'fullname1:' + this.firstName + ' ' + this.lastName
     },
 
     //计算属性的 Setter 却在 计算属性 vs 侦听器 使用上 （注释后，fullname1却起作用，意思是“:”优先于“()”）
     fullName: {
       // getter
-      get () {
+      get() {
         return 'fullname2:' + this.firstName + ' ' + this.lastName
       },
       // setter
-      set (newValue) {
+      set(newValue) {
         const names = newValue.split(' ')
         this.firstName = names[0]
         this.lastName = names[names.length - 1]
@@ -116,11 +116,11 @@ export default {
   methods: {
     //我们为什么需要缓存？假设我们有一个性能开销比较大的计算属性 list，它需要遍历一个巨大的数组并做大量的计算。然后我们可能有其他的计算属性依赖于 list。
     //如果没有缓存，我们将不可避免的多次执行 list 的 getter！如果你不希望有缓存，请用 method 来替代。
-    calculateBooksMessage () {
+    calculateBooksMessage() {
       return this.author.books.length > 0 ? 'Yes' : 'No'
     },
 
-    getAnswer () {
+    getAnswer() {
       this.answer = 'Thinking...'
       axios
         .get('https://yesno.wtf/api')

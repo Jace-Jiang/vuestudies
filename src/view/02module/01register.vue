@@ -18,7 +18,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: 'register',
 
-  data () {
+  data() {
     return {}
   },
 

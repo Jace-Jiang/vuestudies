@@ -32,7 +32,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: 'event',
 
-  data () {
+  data() {
     return {
       counter: 1,
       name: "Jace Jiang",
@@ -44,7 +44,7 @@ export default {
   },
 
   methods: {
-    greet (event) {
+    greet(event) {
       // `this` 内部 `methods` 指向当前活动实例
       alert('Hello ' + this.name + '!')
       // `event` 是原生 DOM event
@@ -53,15 +53,15 @@ export default {
       }
     },
 
-    say (message) {
+    say(message) {
       alert(message)
     },
 
-    one (event) {
+    one(event) {
       // first handler logic...
       alert("one event")
     },
-    two (event) {
+    two(event) {
       // second handler logic...
       alert("two event")
     }

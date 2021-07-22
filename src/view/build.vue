@@ -10,7 +10,7 @@ import backPage from '../components/Back.vue'
 export default {
   name: "build",
 
-  data () { },
+  data() { },
 
   components: {
     backPage

@@ -80,7 +80,7 @@ import alertBox from '../../components/AlertBox.vue'
 export default {
   name: 'module',
 
-  data () {
+  data() {
     return {
       title: "点击按钮时，请看字体的变化",
       posts: [
@@ -103,7 +103,7 @@ export default {
   },
 
   methods: {
-    onEnlargeText (enlargeAmount) {
+    onEnlargeText(enlargeAmount) {
       console.log(enlargeAmount)
       this.postFontSize2 += enlargeAmount
     }

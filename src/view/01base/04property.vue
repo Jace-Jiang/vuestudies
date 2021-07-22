@@ -21,7 +21,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: "property",
 
-  data () {
+  data() {
     return {
       count: 3,
     }
@@ -31,22 +31,22 @@ export default {
     backPage
   },
 
-  created () {
+  created() {
     // 用 Lodash 的防抖函数
     //this.debouncedClick = _.debounce(this.click, 500)
   },
-  unmounted () {
+  unmounted() {
     // 移除组件时，取消定时器
     //this.debouncedClick.cancel()
   },
 
   methods: {
-    increment () {
+    increment() {
       // `this` 指向该组件实例
       this.count++
     },
 
-    click () {
+    click() {
       // ... 响应点击 ...
       alert("你出来了？")
     },

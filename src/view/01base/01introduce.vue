@@ -52,7 +52,7 @@ import TodoItem from '../../components/TodoItem.vue'
 export default {
   name: "introduce",
 
-  data () {
+  data() {
     return {
       counter: 0,
       attributeMsg: 'You loaded this page on ' + new Date().toLocaleString(),
@@ -78,20 +78,20 @@ export default {
   },
 
   //实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。
-  created () {
+  created() {
     this.init()
   },
 
   methods: {
     //声明式渲染
-    init () {
+    init() {
       setInterval(() => {
         this.counter++
       }, 1000)
     },
 
     //处理用户输入
-    reverseMessage () {
+    reverseMessage() {
       this.userMsg = this.userMsg
         .split('')
         .reverse()
@@ -99,7 +99,7 @@ export default {
     },
 
     //条件与循环
-    floating () {
+    floating() {
       this.seen = !this.seen
     }
   }

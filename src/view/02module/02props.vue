@@ -18,7 +18,7 @@ import blogPost from '../../components/BlogPost.vue'
 export default {
   name: 'props',
 
-  data () {
+  data() {
     return {}
   },
 

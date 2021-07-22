@@ -69,7 +69,7 @@ import todoItem from '../../components/TodoItem.vue'
 export default {
   name: 'render',
 
-  data () {
+  data() {
     return {
       parentMessage: 'Parent',
       items: [
@@ -97,7 +97,7 @@ export default {
   },
 
   methods: {
-    addNewTodo () {
+    addNewTodo() {
       this.todos.push({
         id: this.nextTodoId++,
         title: this.newTodoText

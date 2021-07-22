@@ -11,24 +11,24 @@
 <script>
 export default {
   name: "BackTop",
-  data () {
+  data() {
     return {
       btnFlag: false
     };
   },
-  mounted () {
+  mounted() {
     document
       .getElementsByClassName("app-main")[0]
       .addEventListener("scroll", this.scrollToTop);
   },
-  destroyed () {
+  destroyed() {
     document
       .getElementsByClassName("app-main")[0]
       .removeEventListener("scroll", this.scrollToTop);
   },
   methods: {
     // 点击图片回到顶部方法，加计时器是为了过渡顺滑
-    backTop () {
+    backTop() {
       var element = document.getElementsByClassName("app-main")[0];
       let timer = setInterval(() => {
         let ispeed = Math.floor(-element.scrollTop / 5);
@@ -40,7 +40,7 @@ export default {
     },
 
     // 为了计算距离顶部高度，当高度大于60显示回顶部图标，小于60则隐藏
-    scrollToTop () {
+    scrollToTop() {
       var element = document.getElementsByClassName("app-main")[0];
       const that = this;
 

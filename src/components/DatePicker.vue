@@ -15,7 +15,7 @@ export default {
 
   props: ['likes'],
 
-  data () {
+  data() {
     return {}
   },
 

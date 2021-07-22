@@ -16,7 +16,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: "application",
 
-  data () {
+  data() {
     return {
       list: [
         { id: 0, url: "https://segmentfault.com/a/1190000011381906/", text: "详解vue生命周期" },
@@ -33,17 +33,17 @@ export default {
     backPage
   },
 
-  beforeMount () { },
+  beforeMount() { },
 
-  mounted () { },
+  mounted() { },
 
-  beforeUpdate () { },
+  beforeUpdate() { },
 
-  updated () { },
+  updated() { },
 
-  beforeDestroy () { },
+  beforeDestroy() { },
 
-  destroyed () { }
+  destroyed() { }
 }
 </script>
 

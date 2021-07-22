@@ -13,16 +13,16 @@ export default {
 
   props: ['modelValue'],
 
-  data () {
+  data() {
     return {}
   },
 
   computed: {
     value: {
-      get () {
+      get() {
         return this.modelValue
       },
-      set (value) {
+      set(value) {
         this.$emit('update:modelValue', value)
       }
     }

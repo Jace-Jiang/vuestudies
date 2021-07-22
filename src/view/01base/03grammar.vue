@@ -77,7 +77,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: 'grammar',
 
-  data () {
+  data() {
     return {
       mustacheMsg: '数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值：',
       onceMsg: '通过使用 v-once 指令，你也能执行一次性地插值，当数据改变时，插值处的内容不会更新。' + new Date().toLocaleString(),
@@ -97,11 +97,11 @@ export default {
   },
 
   methods: {
-    doSomething () {
+    doSomething() {
       alert("你好吗？")
     },
 
-    onSubmit () {
+    onSubmit() {
       alert("提交你的表单")
     }
   }

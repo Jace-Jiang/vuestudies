@@ -97,7 +97,7 @@ import backPage from '../../components/Back.vue'
 export default {
   name: 'form',
 
-  data () {
+  data() {
     return {
       message: '',
       checked: false,

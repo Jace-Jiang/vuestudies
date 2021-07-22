@@ -10,12 +10,12 @@ export default {
   props: {
     msg: String
   },
-  data () {
+  data() {
     return {
     }
   },
   methods: {
-    backPage () {
+    backPage() {
       this.$router.push("/")
     }
   }
