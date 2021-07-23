@@ -4,6 +4,9 @@
     <date-picker :likes="1"></date-picker>
     <date-picker :likes="2" @change="showChange"></date-picker>
   </div>
+  <div class="demo">
+    <date-picker :likes="3" @change="showChange"></date-picker>
+  </div>
 </template>
 
 <script>

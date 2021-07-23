@@ -7,6 +7,10 @@
       <option value="3">Tomorrow</option>
     </select>
   </div>
+
+  <div id="date-picker" class="date-picker" v-if="likes == 3">
+    <date-picker @change="showChange"></date-picker>
+  </div>
 </template>
 
 <script>

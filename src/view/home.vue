@@ -59,7 +59,7 @@ export default {
           { id: 1, text: "01组件注册", path: "register" },
           { id: 2, text: "02Props", path: "props" },
           { id: 3, text: "03非 Prop 的 Attribute", path: "attribute" },
-          { id: 4, text: "04自定义事件", path: "build" },
+          { id: 4, text: "04自定义事件", path: "customevent" },
           { id: 5, text: "05插槽", path: "build" },
           { id: 6, text: "06提供 / 注入", path: "build" },
           { id: 7, text: "07动态组件 & 异步组件", path: "build" },

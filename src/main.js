@@ -84,6 +84,11 @@ const VueRouter = createRouter({
           component: () => import('./view/02module/03attribute.vue')
       },
       {
+          name: "customevent",
+          path: "/customevent",
+          component: () => import('./view/02module/04custom-event.vue')
+      },
+      {
           name: "build",
           path: "/build",
           component: () => import('./view/build.vue')
