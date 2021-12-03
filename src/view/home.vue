@@ -127,6 +127,14 @@ export default {
           { id: 4, text: "资源", path: "build" }
         ],
         show: false
+      }, {
+        id: 6,
+        name: '共同学习实操',
+        list: [
+          { id: 1, text: "表单", path: "common/01form" },
+          { id: 2, text: "表单验证", path: "build" }
+        ],
+        show: false
       }]
     }
   },
