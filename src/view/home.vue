@@ -99,7 +99,7 @@ export default {
         ],
         show: false
       }, {
-        id: 5,
+        id: 6,
         name: '工具',
         list: [
           { id: 1, text: "单文件组件", path: "build" },
@@ -109,7 +109,7 @@ export default {
         ],
         show: false
       }, {
-        id: 5,
+        id: 7,
         name: '规模化',
         list: [
           { id: 1, text: "路由", path: "build" },
@@ -118,7 +118,7 @@ export default {
         ],
         show: false
       }, {
-        id: 5,
+        id: 8,
         name: '无障碍',
         list: [
           { id: 1, text: "基础", path: "build" },
@@ -128,7 +128,7 @@ export default {
         ],
         show: false
       }, {
-        id: 6,
+        id: 9,
         name: '共同学习实操',
         list: [
           { id: 1, text: "表单", path: "common/01form" },
