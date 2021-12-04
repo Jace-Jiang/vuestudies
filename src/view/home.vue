@@ -24,7 +24,6 @@
         </li>
       </ul>
     </div>
-    <div class="pic">重学前端(Vue3)</div>
   </div>
 </template>
 
@@ -36,98 +35,6 @@ export default {
   data() {
     return {
       headerData: [{
-        id: 1,
-        name: '基础',
-        list: [
-          { id: 1, text: "01-介绍", path: "introduce" },
-          { id: 2, text: "02-应用 & 组件实例", path: "application" },
-          { id: 3, text: "03-模板语法", path: "grammar" },
-          { id: 4, text: "04-Data Property 和方法", path: "property" },
-          { id: 5, text: "05-计算属性和侦听器", path: "listener" },
-          { id: 6, text: "06-Class 与 Style 绑定", path: "classstyle" },
-          { id: 7, text: "07-条件渲染", path: "condition" },
-          { id: 8, text: "08-列表渲染", path: "render" },
-          { id: 9, text: "09-事件处理", path: "event" },
-          { id: 10, text: "10-表单输入绑定", path: "form" },
-          { id: 11, text: "11-组件基础", path: "module" }
-        ],
-        show: false
-      }, {
-        id: 2,
-        name: '深入组件',
-        list: [
-          { id: 1, text: "01组件注册", path: "register" },
-          { id: 2, text: "02Props", path: "props" },
-          { id: 3, text: "03非 Prop 的 Attribute", path: "attribute" },
-          { id: 4, text: "04自定义事件", path: "customevent" },
-          { id: 5, text: "05插槽", path: "build" },
-          { id: 6, text: "06提供 / 注入", path: "build" },
-          { id: 7, text: "07动态组件 & 异步组件", path: "build" },
-          { id: 8, text: "08模板引用", path: "build" },
-          { id: 9, text: "09处理边界情况", path: "build" }
-        ],
-        show: false
-      }, {
-        id: 3,
-        name: '过渡&动画',
-        list: [
-          { id: 1, text: "过渡 & 动画概述", path: "build" },
-          { id: 2, text: "进入过渡 & 离开过渡", path: "build" },
-          { id: 3, text: "列表过渡", path: "build" },
-          { id: 4, text: "状态过渡", path: "build" }
-        ],
-        show: false
-      }, {
-        id: 4,
-        name: '可复用&组合',
-        list: [
-          { id: 1, text: "混入", path: "build" },
-          { id: 2, text: "自定义指令", path: "build" },
-          { id: 3, text: "Teleport", path: "build" },
-          { id: 4, text: "渲染函数", path: "build" },
-          { id: 5, text: "插件", path: "build" }
-        ],
-        show: false
-      }, {
-        id: 5,
-        name: '高阶指南',
-        list: [
-          { id: 1, text: "响应性", path: "build" },
-          { id: 2, text: "组合式API", path: "build" },
-          { id: 3, text: "渲染机制和优化", path: "build" },
-          { id: 4, text: "Vue2中的更改检测警告", path: "build" }
-        ],
-        show: false
-      }, {
-        id: 6,
-        name: '工具',
-        list: [
-          { id: 1, text: "单文件组件", path: "build" },
-          { id: 2, text: "测试", path: "build" },
-          { id: 3, text: "TypeScript 支持", path: "build" },
-          { id: 4, text: "Mobile", path: "build" }
-        ],
-        show: false
-      }, {
-        id: 7,
-        name: '规模化',
-        list: [
-          { id: 1, text: "路由", path: "build" },
-          { id: 2, text: "状态管理", path: "build" },
-          { id: 3, text: "服务端渲染", path: "build" }
-        ],
-        show: false
-      }, {
-        id: 8,
-        name: '无障碍',
-        list: [
-          { id: 1, text: "基础", path: "build" },
-          { id: 2, text: "语义学", path: "build" },
-          { id: 3, text: "标准", path: "build" },
-          { id: 4, text: "资源", path: "build" }
-        ],
-        show: false
-      }, {
         id: 9,
         name: '共同学习实操',
         list: [
@@ -195,20 +102,6 @@ export default {
         background-color: #ff9800;
       }
     }
-  }
-  .pic {
-    float: left;
-    margin-left: 5px;
-    text-align: center;
-    font-size: 27px;
-    font-weight: bold;
-    font-family: Cursive;
-    color: #ffffff;
-    width: 880px;
-    height: 484px;
-    border: 1px solid #51add8;
-    background: url("../assets/horse.jpg") 0 0 no-repeat;
-    background-size: 100% 100%;
   }
 }
 </style>
