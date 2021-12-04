@@ -19,9 +19,9 @@ const VueRouter = createRouter({
           component: () => import('./view/build.vue')
       },
       {
-          name: "common/01form",
-          path: "/01form",
-          component: () => import('./view/common/01form.vue')
+          name: "common/async-form",
+          path: "/async-form",
+          component: () => import('./view/common/async-form.vue')
       }
     ]
   })
