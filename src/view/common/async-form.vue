@@ -31,7 +31,14 @@ export default {
       rules: {
         loginName: {
           validator: (rule, value, callback) => {
-            if (!value) return callback(`该项为必填项`);
+            // if (!value) return callback(`该项为必填项`);
+
+            //1.手机号码的校验
+            var phone = /^1(3|4|5|7|8|6|9)\d{9}$/;
+            if (!phone.test(value)) {
+              return callback(new Error("请输入11位电话号码"));
+            }
+
             callback();
           }
         },
